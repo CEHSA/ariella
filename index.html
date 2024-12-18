@@ -26,13 +26,13 @@
   <script src="lib/js/flip.js"></script>
   <script>
     jQuery(document).ready(function () {
-      var pdf = 'lib/images/pdfjs/2.pdf';
+      var pdf = './lib/images/pdfjs/2.pdf';
       var options = {
         height: 2000,
         duration: 700,
         backgroundColor: "transparent",
         soundEnable: false,
-        enableDownload: false,
+        enableDownload: true,
       };
       var flipBook = $("#flipbookContainer").flipBook(pdf, options);
     });
